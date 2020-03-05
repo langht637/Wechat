@@ -35,6 +35,10 @@ public class CoreController {
             return echostr;
         }
         log.error("接入失败");
+        log.error("接入失败");
+        log.error("接入失败");
+        log.error("接入失败");
+        log.error("接入失败");
         return "";
     }
 
