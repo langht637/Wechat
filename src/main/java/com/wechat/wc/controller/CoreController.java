@@ -2,6 +2,7 @@ package com.wechat.wc.controller;
 
 
 import com.wechat.wc.entity.WebAccessToken;
+import com.wechat.wc.service.Wxservlet;
 import com.wechat.wc.util.SignUtil;
 import com.wechat.wc.util.UrlUtil;
 import com.wechat.wc.util.Wxservlet;
@@ -44,7 +45,6 @@ public class CoreController {
         Map<String,String> map =Wxservlet.getRequest(req.getInputStream());
         String respXml = Wxservlet.getResponse(map);
         System.out.print(respXml);
-
         PrintWriter writer = res.getWriter();
         writer.print(respXml);
         writer.flush();
